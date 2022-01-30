@@ -23,7 +23,7 @@ VALUES
     (5,"Bob", "James", 5, 2),
     (6,"Amy", "Smith", 6, 2);
 
-INSERT INTO managers (id, mngr_name)
+INSERT INTO managers (manager_id, mngr_name)
 VALUES
     (1, "Aaron Smith"),
     (2, "Dave Anderson");
