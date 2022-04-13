@@ -1,28 +1,29 @@
-INSERT INTO  department (id, dept_name)
-VALUES
-    (1, "Engineering"),
-    (2, "Sales"),
-    (3, "Customer Service");
+INSERT INTO department (name)
+VALUES 
+('IT'),
+('Finance & Accounting'),
+('Sales & Marketing'),
+('Operations');
 
-INSERT INTO roles (id, title, salary, department_id)
+INSERT INTO role (title, salary, department_id)
 VALUES
-    (1, "Engineer", 75000, 1),
-    (2, "Lead Engineer", 100000, 1),
-    (3, "Sales Rep", 75000, 2),
-    (4, "Lead Sales Rep", 100000, 2),
-    (5, "Customer Service Rep", 60000, 3),
-    (6, "Customer Liason", 60000, 3);
+('Full Stack Developer', 80000, 1),
+('Software Engineer', 120000, 1),
+('Accountant', 10000, 2), 
+('Finanical Analyst', 150000, 2),
+('Marketing Coordindator', 70000, 3), 
+('Sales Lead', 90000, 3),
+('Project Manager', 100000, 4),
+('Operations Manager', 90000, 4);
 
-INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
-VALUES
-    (1,"Christopher","Pierce", 1, 1),
-    (2,"John", "Doe", 2, 1),
-    (3,"Jane", "Doe", 3, 1),
-    (4,"Tom", "Jones", 4, 1),
-    (5,"Bob", "James", 5, 2),
-    (6,"Amy", "Smith", 6, 2);
 
-INSERT INTO managers (manager_id, mngr_name)
-VALUES
-    (1, "Aaron Smith"),
-    (2, "Dave Anderson");
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES 
+('Bob', 'Adams', 2, null),
+('Rob', 'Anderson', 1, 1),
+('Mary', 'Brown', 4, null),
+('Guy', 'Man', 3, 3),
+('Dude', 'Person', 6, null),
+('Lady', 'Woman', 5, 5),
+('He', 'Him', 7, null),
+('She', 'Her', 8, 7);
